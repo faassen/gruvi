@@ -41,7 +41,7 @@ From a high-level, the flow of a Gruvi program is as follows:
    *switch back* callback.
 3. The fiber switches to the hub, which run the event loop.
 4. When the event loop detects an event for which a fiber registered interest,
-   it will will call the callback. This causes a switch back to the fiber that
+   it will call the callback. This causes a switch back to the fiber that
    installed the event.
 
 The hub instance is automatically created when in is first needed. It can be
